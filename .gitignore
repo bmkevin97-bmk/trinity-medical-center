@@ -1,0 +1,11 @@
+# Respaldos de la base con datos reales (nunca subirlos)
+hospital.sql
+respaldo*.sql
+*.bak
+
+# Editor y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
