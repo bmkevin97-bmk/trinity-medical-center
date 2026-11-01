@@ -1,5 +1,11 @@
 <?php
 // Menú lateral compartido (se incluye en cada página justo después de la etiqueta body)
+// Si alguien abre menu.php directamente en el navegador, lo manda a la página de inicio
+if (realpath($_SERVER['SCRIPT_FILENAME']) === __FILE__) {
+    header("Location: index.php");
+    exit();
+}
+
 $activa = $activa ?? '';
 $ic = function($p){ return '<svg viewBox="0 0 24 24" aria-hidden="true">'.$p.'</svg>'; };
 $items = [
